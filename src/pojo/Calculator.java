@@ -14,7 +14,7 @@ public class Calculator {
     }
 
     public void plus(int num) {
-        System.out.println(baseNum + numberCreator.numberReturn(num));
+        System.out.println(num + numberCreator.numberReturn(baseNum));
     }
 
 }
