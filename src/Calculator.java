@@ -1,8 +1,9 @@
 public class Calculator {
     private int num;
-    private NumberCalculator randomNumberCalculator = new NumberCalculator();
-    public Calculator(int num) {
+    private NumberCalculator randomNumberCalculator;
+    public Calculator(int num, NumberCalculator numberCalculator) {
         this.num = num;
+        this.randomNumberCalculator = numberCalculator;
     }
 
     public void plus() {
