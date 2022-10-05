@@ -6,7 +6,11 @@ public class Distinguish {
         this.numberTypeFind = numberTypeFind;
     }
 
-    public boolean distinguishNum(int num) {
-        return numberTypeFind.findType(num);
+    public void distinguishNums(int firstNum, int secondNum) {
+        numberTypeFind.findType(firstNum);
+        System.out.print("+");
+        numberTypeFind.findType(secondNum);
+        System.out.print("=");
+        numberTypeFind.findType(firstNum + secondNum);
     }
 }

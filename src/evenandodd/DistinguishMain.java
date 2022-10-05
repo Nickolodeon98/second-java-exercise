@@ -1,11 +1,20 @@
 package evenandodd;
 
+import java.util.Scanner;
+
 public class DistinguishMain {
     public static void main(String[] args) {
-        Distinguish evenTest = new Distinguish(new EvenNumber());
-        Distinguish oddTest = new Distinguish(new OddNumber());
+        Scanner sc = new Scanner(System.in);
+        System.out.print(">>> ");
+        int first = sc.nextInt();
+        int second = sc.nextInt();
 
-        if (evenTest.distinguishNum(20)) System.out.println("짝수");
-        if (oddTest.distinguishNum(20)) System.out.println("홀수");
+        Distinguish englishTest = new Distinguish(new EnglishResult());
+        Distinguish koreanTest = new Distinguish(new KoreanResult());
+
+        englishTest.distinguishNums(first, second);
+        System.out.println();
+        koreanTest.distinguishNums(first, second);
+
     }
 }
