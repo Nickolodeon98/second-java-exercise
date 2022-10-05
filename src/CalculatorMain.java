@@ -4,6 +4,6 @@ public class CalculatorMain {
         calc.plus(10, 20);
         calc.minus(20, 10);
         calc.multiple(30, 10);
-        calc.divide(10, 0);
+        calc.divide(10, 20);
     }
 }

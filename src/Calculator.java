@@ -14,7 +14,8 @@ public class Calculator {
 
     public void divide(int a, int b) {
        try {
-           System.out.println(a / b);
+           float result = (float)a / (float)b;
+           System.out.println(result);
        } catch (ArithmeticException e) {
            System.out.println("Error: " + e.getMessage());
        }
