@@ -13,6 +13,10 @@ public class Calculator {
     }
 
     public void divide(int a, int b) {
-        System.out.println(a / b);
+       try {
+           System.out.println(a / b);
+       } catch (ArithmeticException e) {
+           System.out.println("Error: " + e.getMessage());
+       }
     }
 }
