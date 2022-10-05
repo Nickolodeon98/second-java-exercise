@@ -9,6 +9,13 @@ public class Main {
         Calculator sCalc = new Calculator(sNumberGenerator);
 
         calc.plus();
+        calc.minus();
+        calc.multiply();
+        calc.divide();
+
         sCalc.plus();
+        sCalc.minus();
+        sCalc.multiply();
+        sCalc.divide();
     }
 }
