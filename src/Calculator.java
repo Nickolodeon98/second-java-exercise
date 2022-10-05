@@ -20,7 +20,7 @@ public class Calculator {
 
     public void divide() {
        try {
-           System.out.println((float) (num / randomNumberCalculator.randomNumber()));
+           System.out.println((float) num / randomNumberCalculator.randomNumber());
        } catch (ArithmeticException e) {
            System.out.println("0으로 나눌 수 없습니다: " + e.getMessage());
        }
